@@ -8,10 +8,10 @@
     Version: 1.0
 
 ----------------------------------------------
-    
+
     CSS INDEX
     ===================
-  
+
     1. Core Css
     2. Dashboard One
         2.1 Sidebar Menu
@@ -143,8 +143,17 @@
     background: #303641;
     border-bottom: 1px solid #343e50;
 }
-.sidebar-menu .logo{
+.sidebar-menu .logo p{
     text-align: center;
+    position: relative;
+    display: block;
+    color: #ffffff;
+    font-size: 35px;
+    text-transform: capitalize;
+    padding: 15px 15px;
+    letter-spacing: 0;
+    font-weight: 400;
+
 }
 .logo a {
     display: inline-block;

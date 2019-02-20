@@ -40,14 +40,13 @@
         <div class="sidebar-menu">
             <div class="sidebar-header">
                 <div class="logo">
-                    <a href="index.html"><img src="assets/images/icon/logo.png" alt="logo"></a>
+                    <p>LIBRARY</p>
                 </div>
             </div>
             <div class="main-menu">
                 <div class="menu-inner">
                     <nav>
                         <ul class="metismenu" id="menu">
-
                             <li><a href="borrowed-books.html"><i class="fa fa-book"></i> <span>Borrowed Books</span></a></li>
                             <li class="active"><a href="search-books.html"><i class="fa fa-search"></i> <span>Search Books</span></a></li>
                             <li><a href="faq.html"><i class="fa fa-question"></i> <span>FAQs</span></a></li>
@@ -101,27 +100,27 @@
                       <div class="card">
                           <div class="card-body">
                               <h4 class="header-title">Search details</h4>
-                              <form action="#">
+                              <form>
                                   <div class="form-group">
                                       <label for="book">Book name</label>
                                       <input type="text" class="form-control" id="book" aria-describedby="emailHelp" placeholder="Enter book name">
-                                      <small id="emailHelp" class="form-text text-muted">This is the field that gets the most accurate results.</small>
+                                      <small id="emailHelp1" class="form-text text-muted">This is the field that gets the most accurate results.</small>
                                   </div>
 
                                   <div class="form-group">
                                       <label for="author">Author name</label>
                                       <input type="text" class="form-control" id="author" aria-describedby="emailHelp" placeholder="Enter author name">
-                                      <small id="emailHelp" class="form-text text-muted">Narrow down your search by using this field.</small>
+                                      <small id="emailHelp2" class="form-text text-muted">Narrow down your search by using this field.</small>
                                   </div>
 
                                   <div class="form-group">
                                       <label for="code">Book code</label>
                                       <input type="text" class="form-control" id="code" aria-describedby="emailHelp" placeholder="Enter book code">
-                                      <small id="emailHelp" class="form-text text-muted">This is for the dedicated ones who know right down till the code.</small>
+                                      <small id="emailHelp3" class="form-text text-muted">This is for the dedicated ones who know right down till the code.</small>
                                   </div>
 
 
-                                  <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4">Search</button>
+                                  <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4" onclick="searchBook()">Search</button>
                               </form>
                           </div>
                       </div>
@@ -143,37 +142,9 @@
                                                     <th scope="col">Availability</th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Code 1</td>
-                                                    <td>Book 1</td>
-                                                    <td>Author 1</td>
-                                                    <td>Yes</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Code 2</td>
-                                                    <td>Book 2</td>
-                                                    <td>Author 2</td>
-                                                    <td>Yes</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Code 3</td>
-                                                    <td>Book 3</td>
-                                                    <td>Author 3</td>
-                                                    <td>Yes</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">4</th>
-                                                    <td>Code 4</td>
-                                                    <td>This is a book with a really long title that needs to be put as a whole.</td>
-                                                    <td>There are a list of authors whose names have to be uploaded.</td>
-                                                    <td>Yes</td>
-                                                </tr>
+                                            <tbody id="tablebody">
                                             </tbody>
+
                                         </table>
                                     </div>
                                 </div>
@@ -206,6 +177,7 @@
     <script src="assets/js/metisMenu.min.js"></script>
     <script src="assets/js/jquery.slimscroll.min.js"></script>
     <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script type='text/javascript' src='assets/js/main.js'></script>
 
     <!-- others plugins -->
     <script src="assets/js/plugins.js"></script>

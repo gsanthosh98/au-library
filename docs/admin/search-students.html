@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Student</title>
+    <title>Students</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
@@ -54,8 +54,8 @@
                             <a href="javascript:void(0)" aria-expanded="true"><i class="fa fa-user"></i><span>Students</span></a>
                             <ul class="collapse">
                                 <li><a href="student-signup.html">Signup</a></li>
-                                <li class="active"><a href="student-change-details.html">Change details</a></li>
-                                <li><a href="search-students.html">Search</a></li>
+                                <li><a href="student-change-details.html">Change details</a></li>
+                                <li class="active"><a href="search-students.html">Search</a></li>
                             </ul>
                         </li>
 
@@ -116,85 +116,80 @@
             <!-- page title area end -->
             <div class="main-content-inner">
                 <div class="row">
-                    <div class="col-lg-6 col-ml-12">
-                        <div class="row">
+
+                  <div class="col-12 mt-5">
+                      <div class="card">
+                          <div class="card-body">
+                              <h4 class="header-title">Search details</h4>
+                              <form action="#">
+                                  <div class="form-group">
+                                      <label for="book">Student roll number</label>
+                                      <input type="text" class="form-control" id="book" aria-describedby="emailHelp" placeholder="Enter student roll number">
+                                  </div>
 
 
 
 
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-ml-12">
-                        <div class="row">
-                            <!-- basic form start -->
-                            <div class="col-12 mt-5">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="header-title">Change Student Details</h4>
-                                        <form>
-                                          <div class="form-group">
-                                              <label for="name">Name</label>
-                                              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter name">
+                                  <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4">Search</button>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+                    <!-- table primary start -->
+                    <div class="col-lg-12 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title">Issued Books</h4>
+                                <div class="single-table">
+                                    <div class="table-responsive">
+                                        <table class="table text-center">
+                                            <thead class="text-uppercase bg-primary">
+                                                <tr class="text-white">
+                                                    <th scope="col">S. No</th>
+                                                    <th scope="col">Book ID</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Due Date</th>
+                                                    <th scope="col">Fine (INR)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Code 1</td>
+                                                    <td>Book 1</td>
+                                                    <td>19/12/1998</td>
+                                                    <td>23</td>
 
-                                          </div>
-                                          <div class="form-group">
-                                              <label for="register-number">Register number</label>
-                                              <input type="text" class="form-control" id="register-number" aria-describedby="emailHelp" placeholder="Enter your register number">
-
-                                          </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputEmail1">Email address</label>
-                                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleInputPassword1">Password</label>
-                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                            </div>
-
-                                            <div class="form-group">
-                                                <label class="col-form-label">Department</label>
-                                                <select id="department" class="custom-select">
-                                                    <option selected="">Chose your department</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </select>
-                                            </div>
-
-                                            <p class="text-muted mb-3 mt-4 d-block">Year of joining:</p>
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="year1" name="year" class="custom-control-input">
-                                                <label class="custom-control-label" for="year1">2016</label>
-                                            </div>
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="year2" name="year" class="custom-control-input">
-                                                <label class="custom-control-label" for="year2">2017</label>
-                                            </div>
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="year3" name="year" class="custom-control-input">
-                                                <label class="custom-control-label" for="year3">2018</label>
-                                            </div>
-                                            <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="year4" name="year" class="custom-control-input">
-                                                <label class="custom-control-label" for="year4">2019</label>
-                                            </div>
-                                            <br>
-
-
-
-                                            <button type="submit" class="btn btn-primary mt-4 pr-4 pl-4">Submit</button>
-                                        </form>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Code 2</td>
+                                                    <td>Book 2</td>
+                                                    <td>19/12/1998</td>
+                                                    <td>2</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Code 3</td>
+                                                    <td>Book 3</td>
+                                                    <td>19/12/1998</td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>Code 4</td>
+                                                    <td>This is a book with a really long title that needs to be put as a whole.</td>
+                                                    <td>19/12/1998</td>
+                                                    <td>13</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
-                            <!-- basic form end -->
-
-
-
-
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
