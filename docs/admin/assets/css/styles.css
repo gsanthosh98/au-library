@@ -514,7 +514,7 @@
 
 .notification-area li:hover>i,
 .dropdown.show>i {
-    color: var(--primary-color);
+    color: #0069d9;
 }
 
 .notification-area li i>span {
@@ -525,7 +525,7 @@
     font-size: 10px;
     font-weight: 600;
     color: #fff;
-    background: var(--primary-color);
+    background: #0069d9;
     height: 20px;
     width: 20px;
     border-radius: 50%;
@@ -543,7 +543,7 @@
 }
 
 .notify-title {
-    background: var(--primary-color);
+    background: #0069d9;
     display: block;
     padding: 18px 30px;
     color: #fff;
@@ -666,7 +666,7 @@
     top: 50%;
     width: 4px;
     height: 36px;
-    background: var(--primary-color);
+    background: #0069d9;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
 }
@@ -722,8 +722,14 @@ ul.breadcrumbs {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background: -webkit-linear-gradient(left, #8914fe 0%, #8063f5 100%);
-    background: linear-gradient(to right, #8914fe 0%, #8063f5 100%);
+
+
+        background: #0069d9;
+
+
+
+    /*background: -webkit-linear-gradient(left, #8914fe 0%, #8063f5 100%);
+    background: linear-gradient(to right, #8914fe 0%, #8063f5 100%);*/
     padding: 17px 38px;
     position: relative;
 }
@@ -825,7 +831,7 @@ ul.breadcrumbs {
 .single-report .icon {
     font-size: 32px;
     color: #fff;
-    background: var(--primary-color);
+    background: #0069d9;
     height: 95px;
     width: 100px;
     text-align: right;
@@ -1143,7 +1149,7 @@ table.dbkit-table tr td {
     top: 0;
     height: 100%;
     width: 125px;
-    background: var(--primary-color);
+    background: #0069d9;
     text-align: center;
     line-height: 80px;
     font-weight: 600;
@@ -1170,7 +1176,7 @@ table.dbkit-table tr td {
     width: 100%;
     margin-top: 20px;
     height: 79px;
-    background: var(--primary-color);
+    background: #0069d9;
     color: #fff;
     letter-spacing: 0;
     font-weight: 700;
@@ -1704,8 +1710,7 @@ table.dbkit-table tr td {
 }
 
 .gradiant-bg .card-header a {
-    background-image: -webkit-linear-gradient(top left, #8914fe, #8160f6);
-    background-image: linear-gradient(to bottom right, #8914fe, #8160f6);
+  background: #0069d9;
     color: #fff;
 }
 

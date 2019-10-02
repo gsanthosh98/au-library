@@ -1,0 +1,1 @@
+ALTER TABLE `book` ADD `donatedby` INT(11) NULL DEFAULT NULL AFTER `row`;
